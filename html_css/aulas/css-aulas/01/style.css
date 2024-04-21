@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body div section p {
+    color: darkcyan;
+}
+
+.caixa {
+    transition: all 150ms ease-in-out;
+}
+
+.caixa:hover { /* sub-classe hover aplica o estilo quando passamos o cursor do mouse em cima do elemento*/
+    color: red;
+    text-decoration: underline;
+}
+
+a:link { /* sub-classe para links que nunca foram visitados */
+    color: darkorange;
+}
+
+a:visited { /* sub-classe para links que foram visitados */
+    color: darkred;
+}
+
+a:active { /* sub-classe para links que estao sendo visitados */
+    color: darkgreen;
+}
+
+input:focus { /* sub-classe para elementos em foco */
+    box-shadow: 0 0 5px black;
+    outline: none;
+}
+
+input:disabled { /* sub-calsse para quando um input estiver desativado */
+    background-color: rosybrown;
+    cursor: not-allowed;
+}
+
+input:enabled { /* sub-classe para quando um input estiver ativado */
+    background-color: aquamarine;
+}
+
+input:checked { /* sub-classe para quando um input estiver marcado */
+    background-color: black;
+}
+
+p:not(.merda) { /* sub-clase para elementos que nao estiverem com determinado estado */
+    background-color: antiquewhite;
+}
+
+ul li:nth-child(even) {
+    background-color: blueviolet;
+}
+
+ul li:nth-child(odd) {
+    background-color: brown;
+}
